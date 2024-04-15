@@ -1,0 +1,54 @@
+.wrapper {
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    color: var(--text-color);
+    padding: 16px 4px 16px 16px;
+}
+
+.inner {
+    height: 100%;
+}
+
+.logo-container {
+    display: block;
+    height: 76px;
+    width: 76px;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+}
+
+.aside-options {
+    margin-left: 16px;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100%;
+}
+
+.aside-session {
+    display: block;
+    flex: 1;
+    margin: 10px 0px;
+}
+
+.option {
+    margin: 8px 0px;
+}
+
+.menu-container {
+}
+
+.menu {
+}
+
+.library-container {
+}
+
+.library {
+}
+
+.Library {
+}

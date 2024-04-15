@@ -1,1 +1,67 @@
+@use 'sass:math';
 @import 'normalize.css';
+
+// Variables
+:root {
+    --text-color: #fff;
+
+    --active-color: #30827a;
+
+    --sidebar-bg: #212429;
+}
+
+// CSS reset
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+.App {
+    height: 100vh;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: var(--text-color);
+    text-decoration: none;
+}
+
+// Styles
+.d-flex {
+    display: flex;
+}
+
+.h100 {
+    height: 100%;
+}
+
+// margin top
+@for $i from 1 through 6 {
+    .mt-#{$i} {
+        margin-top: 4px * $i;
+    }
+}
+
+// row and col
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+@for $i from 1 through 12 {
+    .col-#{$i} {
+        flex-basis: 100% * math.div($i, 12);
+    }
+}
