@@ -5,7 +5,8 @@
 :root {
     --text-color: #fff;
 
-    --active-color: #30827a;
+    --active-color: rgba(0, 187, 176);
+    --pre-active-color: rgba(162, 255, 248);
 
     --sidebar-bg: #212429;
 }
@@ -23,6 +24,7 @@ html {
 
 body {
     font-size: 1.6rem;
+    // padding: 4px 12px 0 12px;
 }
 
 .App {
@@ -38,6 +40,13 @@ a {
     text-decoration: none;
 }
 
+button,
+input,
+[tabindex] {
+    outline: none;
+    border: none;
+}
+
 // Styles
 .d-flex {
     display: flex;
@@ -45,6 +54,10 @@ a {
 
 .h100 {
     height: 100%;
+}
+
+.activeText {
+    color: var(--active-color);
 }
 
 // margin top

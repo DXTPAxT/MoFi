@@ -2,53 +2,71 @@
     height: 100%;
     background-color: var(--sidebar-bg);
     color: var(--text-color);
-    padding: 16px 4px 16px 16px;
-}
+    padding: 20px 0 20px 20px;
 
-.inner {
-    height: 100%;
+    .inner {
+        height: 100%;
+    }
 }
 
 .logo-container {
     display: block;
-    height: 76px;
-    width: 76px;
-}
+    height: 92px;
+    width: 92px;
+    margin-bottom: 28px;
 
-.logo {
-    height: 100%;
-    width: 100%;
+    .logo {
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .aside-options {
     margin-left: 16px;
     display: flex;
     flex-direction: column;
-    align-content: space-between;
-    height: 100%;
-}
-
-.aside-session {
-    display: block;
-    flex: 1;
-    margin: 10px 0px;
+    justify-content: space-between;
+    height: calc(100% - 108px);
 }
 
 .option {
-    margin: 8px 0px;
+    margin: 16px 0px;
+    position: relative;
+    display: block;
+
+    a {
+        display: flex;
+        align-items: center;
+        &:not(&[class*='activeText']):hover {
+            animation: OptionHover 0.08s linear forwards;
+        }
+
+        &[class*='activeText']::after {
+            content: '';
+            position: absolute;
+            right: 0;
+            top: -4px;
+            display: block;
+            background-color: var(--active-color);
+            height: calc(100% + 8px);
+            width: 3px;
+        }
+    }
 }
 
-.menu-container {
+.option-icon {
+    font-size: 3rem;
+    margin-right: 10px;
 }
 
-.menu {
-}
+// Keyframes
 
-.library-container {
-}
-
-.library {
-}
-
-.Library {
+@keyframes OptionHover {
+    from {
+    }
+    to {
+        opacity: 0.8;
+        color: var(--pre-active-color);
+        transform: translateX(2px);
+    }
 }
