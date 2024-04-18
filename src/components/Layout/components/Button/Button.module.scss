@@ -1,0 +1,49 @@
+.general {
+    cursor: pointer;
+}
+
+.watch {
+    background-color: var(--primary-color);
+    color: rgba(0, 50, 50);
+}
+
+.feature {
+    color: var(--text-color);
+}
+
+.small {
+    &.feature {
+        width: 10px;
+        height: 10px;
+
+        &:hover {
+            cursor: pointer;
+            animation: Opacityhover_07 0.09s linear forwards;
+        }
+    }
+}
+
+.medium {
+}
+
+.large {
+    &.feature {
+        background-color: #ffffff44;
+    }
+}
+
+@for $i from 1 to 40 {
+    .padding-#{$i} {
+        padding: 0 $i px;
+    }
+}
+
+// Keyframes
+
+@keyframes Opacityhover_07 {
+    from {
+    }
+    to {
+        opacity: 0.7;
+    }
+}

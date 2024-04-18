@@ -3,3 +3,62 @@
     background-color: var(--sidebar-bg);
     color: var(--text-color);
 }
+
+.account-container {
+    padding: 36px 36px 0 36px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.account-noti {
+    display: block;
+    padding: 9px;
+    height: 44px;
+    width: 44px;
+    background-color: #ffffff2e;
+    border-radius: 18%;
+
+    &:hover {
+        cursor: pointer;
+        animation: notiHover 0.09s linear forwards;
+    }
+}
+
+.account-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.account-name {
+    &:hover {
+        cursor: default;
+    }
+}
+
+.account-options-btn {
+    padding-left: 10px;
+    padding-right: 20px;
+    font-size: 1.4rem;
+}
+
+.account-avatar {
+    display: block;
+    height: 44px;
+    width: 44px;
+    border-radius: 18%;
+}
+
+// Keyframes
+
+@keyframes notiHover {
+    from {
+    }
+    to {
+        opacity: 0.6;
+    }
+}

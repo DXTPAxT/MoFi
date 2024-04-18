@@ -1,7 +1,6 @@
 import logo from '~/assets/img/logo.png';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
-import { useState, useEffect } from 'react';
 
 import classNames from 'classnames/bind';
 import styles from './Sidebar1.module.scss';
@@ -10,29 +9,16 @@ import options from './options.js';
 const cx = classNames.bind(styles);
 
 function Sidebar1() {
-    const [currentRoute, setCurrentRoute] = useState(null);
-
-    useEffect(() => {
+    function handleLinkClick(e) {
         if (document.querySelector('.activeText')) {
             document.querySelector('.activeText').classList.remove('activeText');
         }
 
-        console.log(currentRoute);
-
-        const links = document.querySelectorAll(`a:not(a[class~='notLink'])`);
-
-        if (!currentRoute) {
-            setCurrentRoute(links[0]);
-        }
-
-        if (currentRoute) {
-            currentRoute.classList.add('activeText');
-        }
-    }, [currentRoute]);
-
-    function handleLinkClick(e) {
         const pageLink = e.target.closest('a');
-        setCurrentRoute(pageLink);
+
+        if (pageLink) {
+            pageLink.classList.add('activeText');
+        }
     }
 
     return (
@@ -50,7 +36,15 @@ function Sidebar1() {
 
                                 {options[session].map((option, index) => (
                                     <li className={cx('option')} onClick={handleLinkClick} key={index}>
-                                        <Link to={option.path}>
+                                        <Link
+                                            to={option.path}
+                                            className={
+                                                window.location.pathname == option.path ||
+                                                (window.location.pathname.includes(option.path) && option.path != '/')
+                                                    ? 'activeText'
+                                                    : null
+                                            }
+                                        >
                                             <Icon icon={option.icon} className={cx('option-icon')} />
                                             {option.content}
                                         </Link>

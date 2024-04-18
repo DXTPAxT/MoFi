@@ -2,7 +2,7 @@
     height: 100%;
     background-color: var(--sidebar-bg);
     color: var(--text-color);
-    padding: 20px 0 20px 20px;
+    padding: 40px 0 0 36px;
 
     .inner {
         height: 100%;
@@ -11,8 +11,8 @@
 
 .logo-container {
     display: block;
-    height: 92px;
-    width: 92px;
+    height: 60px;
+    width: 60px;
     margin-bottom: 28px;
 
     .logo {
@@ -22,7 +22,6 @@
 }
 
 .aside-options {
-    margin-left: 16px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -47,7 +46,7 @@
             right: 0;
             top: -4px;
             display: block;
-            background-color: var(--active-color);
+            background-color: var(--primary-color);
             height: calc(100% + 8px);
             width: 3px;
         }

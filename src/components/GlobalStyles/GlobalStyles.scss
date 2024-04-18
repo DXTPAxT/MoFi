@@ -5,7 +5,7 @@
 :root {
     --text-color: #fff;
 
-    --active-color: rgba(0, 187, 176);
+    --primary-color: rgba(0, 187, 176);
     --pre-active-color: rgba(162, 255, 248);
 
     --sidebar-bg: #212429;
@@ -57,7 +57,7 @@ input,
 }
 
 .activeText {
-    color: var(--active-color);
+    color: var(--primary-color);
 }
 
 // margin top
