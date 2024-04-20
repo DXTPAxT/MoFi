@@ -1,5 +1,6 @@
 @use 'sass:math';
 @import 'normalize.css';
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
 // Variables
 :root {
@@ -16,6 +17,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+    font-family: 'Oswald', sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
 }
 
 html {

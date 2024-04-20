@@ -12,13 +12,16 @@ function Sidebar2() {
         <aside className={cx('wrapper', 'col-3', 'h100')}>
             <div className={cx('inner')}>
                 <div className={cx('account-container')}>
-                    <Icon icon="solar:bell-bold" className={cx('account-noti')} />
+                    <div className={cx('account-noti-container')}>
+                        <div className={cx('account-noti-count')}>3</div>
+                        <Icon icon="solar:bell-bold" className={cx('account-noti')} />
+                    </div>
 
                     <div className={cx('account-wrapper')}>
-                        <div className={cx('account-name')}>Đỗ Xuân Tài</div>
+                        <div className={cx('account-name')}>Samatha Smith</div>
 
                         <div className={cx('account-options-btn')}>
-                            <Button styles="move" size="small" direction="down" />
+                            <Button styles="move" size="medium" direction="down" />
                         </div>
 
                         <div>

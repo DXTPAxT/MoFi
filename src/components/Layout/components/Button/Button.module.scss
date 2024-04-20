@@ -1,5 +1,8 @@
 .general {
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .watch {
@@ -24,6 +27,15 @@
 }
 
 .medium {
+    &.feature {
+        height: 20px;
+        width: 20px;
+
+        &:hover {
+            cursor: pointer;
+            animation: Opacityhover_07 0.09s linear forwards;
+        }
+    }
 }
 
 .large {
