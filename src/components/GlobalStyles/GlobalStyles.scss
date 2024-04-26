@@ -66,6 +66,10 @@ input,
     color: var(--primary-color);
 }
 
+.hide {
+    display: none;
+}
+
 // margin top
 @for $i from 1 through 6 {
     .mt-#{$i} {

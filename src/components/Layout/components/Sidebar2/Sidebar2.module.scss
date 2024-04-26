@@ -35,13 +35,57 @@
     top: -10px;
 }
 
-.account-noti {
+.account-noti-icon {
     display: block;
     padding: 9px;
     height: 44px;
     width: 44px;
     background-color: #ffffff2e;
     border-radius: 18%;
+}
+
+.account-noti-list-container {
+    padding: 16px 8px 16px 16px;
+}
+
+.account-noti-list-heading {
+    user-select: none;
+    font-size: 2.2rem;
+    border-bottom: #828282 solid 2px;
+    padding-bottom: 10px;
+}
+
+.account-noti {
+    padding: 8px 6px 8px 0;
+    margin: 4px 0;
+    border-radius: 10px;
+
+    &:hover {
+        background-color: rgb(140 140 140 / 36%);
+        cursor: pointer;
+    }
+}
+
+.account-noti-content {
+    width: 300px;
+    padding-left: 4px;
+    max-height: 3.6rem;
+    margin-bottom: 4px;
+    position: relative;
+    border-radius: 4px;
+    line-height: 1.8rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.account-noti-time {
+    font-size: 1.4rem;
+    display: block;
+    text-align: end;
+    width: 100%;
 }
 
 .account-wrapper {
@@ -53,9 +97,26 @@
 
 .account-name {
     font-size: 1.8rem;
+    user-select: none;
+}
+
+.account-options {
+    padding: 8px;
+    font-size: 1.6rem;
+}
+
+.account-option {
+    padding: 8px;
+    border-radius: 8px;
+    user-select: none;
     &:hover {
-        cursor: default;
+        background-color: rgb(140 140 140 / 36%);
+        cursor: pointer;
     }
+}
+
+.account-option {
+    border-bottom: #ffffff2e solid 1px;
 }
 
 .account-options-btn {
@@ -69,6 +130,11 @@
     height: 44px;
     width: 44px;
     border-radius: 18%;
+    user-select: none;
+
+    &:hover {
+        cursor: pointer;
+    }
 }
 
 // Keyframes
