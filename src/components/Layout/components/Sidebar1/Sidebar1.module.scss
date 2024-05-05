@@ -37,7 +37,10 @@
     a {
         display: flex;
         align-items: center;
+        transition: linear 0.15s;
+
         &:not(&[class*='activeText']):hover {
+            transform: translateX(2px);
             animation: OptionHover 0.08s linear forwards;
         }
 
@@ -67,6 +70,5 @@
     to {
         opacity: 0.8;
         color: var(--pre-active-color);
-        transform: translateX(2px);
     }
 }

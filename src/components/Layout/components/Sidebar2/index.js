@@ -1,13 +1,15 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import classNames from 'classnames/bind';
 import styles from './Sidebar2.module.scss';
 import Tippy from '@tippyjs/react';
 import 'tippy.js/animations/shift-away.css';
 
-import Button from '~/components/Layout/components/Button';
+import MyBtn from '~/components/Layout/components/MyBtn';
 import { Icon } from '@iconify/react';
 import avatar from '~/assets/img/avatar.jpg';
-import { Wrapper as PopperWrapper } from '../Popper';
+import { Wrapper as PopperWrapper } from '~/components/Layout/components/Popper';
+import MovieOption from './MovieOption';
+import MovieContents from './MovieOptionContents';
 
 const cx = classNames.bind(styles);
 
@@ -95,7 +97,7 @@ function Sidebar2() {
                             }
                         >
                             <div className={cx('account-options-btn')}>
-                                <Button styles="move" size="medium" direction="down" />
+                                <MyBtn styles="move" size="medium" direction="down" />
                             </div>
                         </Tippy>
 
@@ -104,6 +106,14 @@ function Sidebar2() {
                         </div>
                     </div>
                 </div>
+
+                {MovieContents.map((Content, i) => {
+                    return (
+                        <div key={i}>
+                            <MovieOption content={Content} />
+                        </div>
+                    );
+                })}
             </div>
         </aside>
     );

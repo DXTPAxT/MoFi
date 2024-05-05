@@ -1,10 +1,10 @@
 import classNames from 'classnames/bind';
-import styles from './Button.module.scss';
+import styles from './MyBtn.module.scss';
 import { Icon } from '@iconify/react';
 
 const cx = classNames.bind(styles);
 
-function Button(props) {
+function MyBtn(props) {
     const padding = props.padding;
     const size = props.size;
     const direction = props.direction;
@@ -24,4 +24,4 @@ function Button(props) {
     }
 }
 
-export default Button;
+export default MyBtn;
