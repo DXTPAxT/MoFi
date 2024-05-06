@@ -9,12 +9,13 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    // justify-content: space-between;
+    justify-content: space-between;
 }
+
+// Account
 
 .account-container {
     display: flex;
-    margin-bottom: 50px;
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
@@ -147,6 +148,13 @@
 }
 
 // Movie options
+
+.movie-options-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex: 1;
+}
 
 .top-rated {
     display: block;

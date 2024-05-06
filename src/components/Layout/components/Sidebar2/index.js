@@ -107,13 +107,15 @@ function Sidebar2() {
                     </div>
                 </div>
 
-                {MovieContents.map((Content, i) => {
-                    return (
-                        <div key={i}>
-                            <MovieOption content={Content} />
-                        </div>
-                    );
-                })}
+                <div className={cx('movie-options-container')}>
+                    {MovieContents.map((Content, i) => {
+                        return (
+                            <div key={i}>
+                                <MovieOption content={Content.element} name={Content.name} />
+                            </div>
+                        );
+                    })}
+                </div>
             </div>
         </aside>
     );

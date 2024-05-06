@@ -12,13 +12,7 @@ function MovieOption(prop) {
         <div className={cx('wrapper')}>
             <div className={cx('header')}>
                 <div className={cx('option-name-container')}>
-                    <span className={cx('option-name')}>Top rated</span>
-                    <div className={cx('option-icon', 'left')}>
-                        <Icon icon="raphael:arrowleft" />
-                    </div>
-                    <div className={cx('option-icon', 'right')}>
-                        <Icon icon="raphael:arrowright" />
-                    </div>
+                    <span className={cx('option-name')}>{prop.name}</span>
                 </div>
                 <div className={cx('see-more-container')}>
                     <span className={cx('see-more-text')}>See more</span>

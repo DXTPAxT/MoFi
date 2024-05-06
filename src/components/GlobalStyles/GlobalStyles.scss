@@ -54,10 +54,6 @@ input,
 }
 
 // Styles
-.d-flex {
-    display: flex;
-}
-
 .h100 {
     height: 100%;
 }
@@ -86,5 +82,6 @@ input,
 @for $i from 1 through 12 {
     .col-#{$i} {
         flex-basis: 100% * math.div($i, 12);
+        max-width: 100% * math.div($i, 12);
     }
 }
