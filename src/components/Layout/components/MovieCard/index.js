@@ -7,15 +7,15 @@ import { AddBtnStyle, WatchBtnStyle } from './BtnStyles';
 
 const cx = classNames.bind(styles);
 
-function MovieCard(prop) {
-    const MovieThumb = prop.thumb;
+function MovieCard(props) {
+    const MovieThumb = props.thumb;
 
     return (
         <div className={cx('wrapper')} style={{ backgroundImage: `url(${MovieThumb})` }}>
             <div className={cx('layer')}>
                 <div className={cx('movie-content')}>
                     <div className={cx('movie-name')}>
-                        <span>Quái Vật Godzilla Trừ Một</span>
+                        <span>Quái Vật Godzilla Trừ {props.id}</span>
                     </div>
                     <div className={cx('movie-features')}>
                         <div className={cx('movie-eps')}>
