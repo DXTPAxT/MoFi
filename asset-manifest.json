@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/MoFi/static/css/main.41a7d0df.css",
+    "main.js": "/MoFi/static/js/main.fd018595.js",
+    "static/js/453.0b9e0db4.chunk.js": "/MoFi/static/js/453.0b9e0db4.chunk.js",
+    "static/media/avatar.jpg": "/MoFi/static/media/avatar.e8e59bb4ca64b8802a48.jpg",
+    "static/media/filmThumb_demo.webp": "/MoFi/static/media/filmThumb_demo.00fb29affbccde03601c.webp",
+    "index.html": "/MoFi/index.html",
+    "main.41a7d0df.css.map": "/MoFi/static/css/main.41a7d0df.css.map",
+    "main.fd018595.js.map": "/MoFi/static/js/main.fd018595.js.map",
+    "453.0b9e0db4.chunk.js.map": "/MoFi/static/js/453.0b9e0db4.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.41a7d0df.css",
+    "static/js/main.fd018595.js"
+  ]
+}
