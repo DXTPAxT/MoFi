@@ -1,17 +1,28 @@
 .wrapper {
-    width: 100%;
     position: relative;
+}
+
+.slider {
     overflow: hidden;
 }
 
 .slide-list {
     display: flex;
     flex-direction: row;
+    transition: linear 0.3s;
 }
 
 .slide-icon {
-    font-size: 8rem;
-    transition: linear 0.2s;
+    box-shadow: #000c 0 2px 10px;
+    font-size: 3rem;
+    transition: ease-out 0.2s;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25%;
 
     &:hover {
         cursor: pointer;
@@ -19,32 +30,6 @@
 
     &:hover svg {
         opacity: 0.7;
-    }
-
-    &.left {
-        background-color: #ffffff6b;
-        position: absolute;
-        display: flex;
-        left: -22px;
-        top: calc(50% - 50px);
-        height: 96px;
-        width: 51px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 25%;
-    }
-
-    &.right {
-        background-color: #ffffff3b;
-        position: absolute;
-        display: flex;
-        right: 22px;
-        top: calc(50% - 50px);
-        height: 96px;
-        width: 51px;
-        align-items: center;
-        justify-content: center;
-        border-radius: 25%;
     }
 
     &.left:hover {

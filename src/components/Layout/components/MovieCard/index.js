@@ -11,7 +11,10 @@ function MovieCard(props) {
     const MovieThumb = props.thumb;
 
     return (
-        <div className={cx('wrapper')} style={{ backgroundImage: `url(${MovieThumb})` }}>
+        <div
+            className={cx('wrapper', props.size)}
+            style={{ backgroundImage: `url(${MovieThumb})` }}
+        >
             <div className={cx('layer')}>
                 <div className={cx('movie-content')}>
                     <div className={cx('movie-name')}>

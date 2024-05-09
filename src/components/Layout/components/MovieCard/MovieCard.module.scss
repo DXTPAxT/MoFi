@@ -1,9 +1,13 @@
 .wrapper {
-    height: 112px;
-    width: 200px;
     background-size: cover;
     background-repeat: no-repeat;
     border-radius: 12px;
+    box-shadow: #000 4px 4px 10px;
+
+    &.small {
+        height: 112px;
+        width: 200px;
+    }
 }
 
 .layer {
