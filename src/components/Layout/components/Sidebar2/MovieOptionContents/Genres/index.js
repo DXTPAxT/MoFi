@@ -5,7 +5,7 @@ import SlideShow from '~/components/Layout/components/SlideShow';
 const cx = classNames.bind(styles);
 
 function Genres() {
-    return;
+    return <div>Genres</div>;
 }
 
 export default Genres;
