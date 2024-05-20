@@ -1,0 +1,18 @@
+.genres-item {
+    margin: 7px 10px;
+    user-select: none;
+
+    &:first-child,
+    &:nth-child(2) {
+        margin-left: 0;
+    }
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:hover {
+        cursor: pointer;
+        filter: brightness(70%);
+    }
+}

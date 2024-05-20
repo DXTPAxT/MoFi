@@ -1,0 +1,15 @@
+.wrapper {
+    padding: 44px;
+}
+
+.header {
+    width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.header-list {
+    display: flex;
+}

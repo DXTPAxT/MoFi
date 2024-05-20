@@ -18,7 +18,8 @@ function SlideShow(props) {
             slideListRef.current.style.transform = `translateX(${props.firstItem}px)`;
         } else {
             slideListRef.current.style.transform = `translateX( ${
-                (slideItemWidth + props.slideItemDis) * -currentItem + props.centerItems
+                (slideItemWidth + props.slideItemDis) * -currentItem +
+                props.centerItemsSize
             }px )`;
         }
     }, [currentItem]);
@@ -34,7 +35,11 @@ function SlideShow(props) {
     return (
         <div className={cx('wrapper')}>
             <div className={cx('slider')} style={props.ns}>
-                <div className={cx('slide-list')} ref={slideListRef}>
+                <div
+                    className={cx('slide-list')}
+                    ref={slideListRef}
+                    style={props.listStyles}
+                >
                     {props.children}
                 </div>
             </div>

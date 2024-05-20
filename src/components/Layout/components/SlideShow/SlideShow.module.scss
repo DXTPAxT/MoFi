@@ -7,6 +7,8 @@
 }
 
 .slide-list {
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: row;
     transition: linear 0.3s;
