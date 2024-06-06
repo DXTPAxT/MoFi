@@ -22,14 +22,32 @@ function SlideShow(props) {
                 props.centerItemsSize
             }px )`;
         }
+
+        if (props.listSpeed) {
+            slideListRef.current.style.transition = `ease ${props.listSpeed}s`;
+        }
+
+        console.log(currentItem);
     }, [currentItem]);
+
+    useEffect(() => {
+        if (props.autoScrollTime) {
+            setInterval(() => {
+                MoveToNextItem();
+            }, props.autoScrollTime * 1000);
+        }
+    }, []);
 
     function MoveToPrevItem() {
         setCurrentItem((prev) => prev - 1);
     }
 
     function MoveToNextItem() {
-        setCurrentItem((prev) => prev + 1);
+        if (currentItem == props.maxItem - 1) {
+            setCurrentItem(0);
+        } else {
+            setCurrentItem((prev) => prev + 1);
+        }
     }
 
     return (

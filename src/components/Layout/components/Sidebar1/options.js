@@ -3,7 +3,11 @@ const options = {
         { path: '/', icon: 'mingcute:home-2-fill', content: 'Home' },
         { path: '/discover', icon: 'iconamoon:discover-fill', content: 'Discover' },
         { path: '/awards', icon: 'bi:award-fill', content: 'Awards' },
-        { path: '/celebrities', icon: 'material-symbols:award-star-rounded', content: 'Celebrities' },
+        {
+            path: '/celebrities',
+            icon: 'material-symbols:award-star-rounded',
+            content: 'Celebrities',
+        },
     ],
     library: [
         { path: '/recent', icon: 'mdi:clock', content: 'Recent' },

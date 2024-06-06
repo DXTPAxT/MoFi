@@ -13,14 +13,11 @@ function Sidebar1() {
         if (document.querySelector('.activeText')) {
             document.querySelector('.activeText').classList.remove('activeText');
         }
-
         const pageLink = e.target.closest('a');
-
         if (pageLink) {
             pageLink.classList.add('activeText');
         }
     }
-
     return (
         <aside className={cx('wrapper', 'col-2', 'h100')}>
             <div className={cx('inner')}>
@@ -31,26 +28,34 @@ function Sidebar1() {
                 <ul className={cx('aside-options')}>
                     {Object.keys(options).map((session, index) => (
                         <li key={index}>
-                            <ul>
-                                {`${session[0].toUpperCase()}` + `${session.substring(1)}`}
+                            <div>
+                                {`${session[0].toUpperCase()}` +
+                                    `${session.substring(1)}`}
 
                                 {options[session].map((option, index) => (
-                                    <li className={cx('option')} onClick={handleLinkClick} key={index}>
+                                    <div className={cx('option')} key={index}>
                                         <Link
+                                            onClick={handleLinkClick}
                                             to={option.path}
                                             className={
                                                 window.location.pathname == option.path ||
-                                                (window.location.pathname.includes(option.path) && option.path != '/')
+                                                (window.location.pathname.includes(
+                                                    option.path,
+                                                ) &&
+                                                    option.path != '/')
                                                     ? 'activeText'
                                                     : null
                                             }
                                         >
-                                            <Icon icon={option.icon} className={cx('option-icon')} />
+                                            <Icon
+                                                icon={option.icon}
+                                                className={cx('option-icon')}
+                                            />
                                             {option.content}
                                         </Link>
-                                    </li>
+                                    </div>
                                 ))}
-                            </ul>
+                            </div>
                         </li>
                     ))}
                 </ul>

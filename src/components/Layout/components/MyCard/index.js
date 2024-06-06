@@ -62,6 +62,26 @@ function MyCard(props) {
                     </Button>
                 </div>
             );
+        case 'theatre':
+            return (
+                <div className={cx('wrapper', 'theatre', props.size)} style={Styles}>
+                    <div className={cx('layer')}>
+                        <div className={cx('content')}>
+                            <div className={cx('name')}>
+                                <span>Quái Vật Godzilla Trừ {props.id}</span>
+                            </div>
+                            <div className={cx('features')}>
+                                <div className={cx('eps')}>
+                                    <span>1 ep</span>
+                                </div>
+                                <div className={cx('genres')}>
+                                    <span>Khoa Học Viễn Tưởng, Kinh dị, Hành động</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            );
     }
 }
 

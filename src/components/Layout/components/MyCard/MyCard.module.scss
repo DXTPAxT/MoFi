@@ -63,6 +63,50 @@
     }
 }
 
+.theatre {
+    .name {
+        max-height: 1.8rem;
+        font-size: 1.4rem;
+        margin-bottom: 12px;
+        display: -webkit-box;
+        -webkit-line-clamp: 1;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+
+        & span {
+            font-weight: 400;
+            user-select: none;
+        }
+    }
+
+    .features {
+        display: flex;
+        flex-direction: row;
+
+        & span {
+            font-weight: 200;
+            user-select: none;
+        }
+    }
+
+    .eps {
+        font-size: 1.4rem;
+        flex: 1;
+    }
+
+    .genres {
+        font-size: 1.2rem;
+        flex: 1;
+        max-height: 3.2rem;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
 .genres {
     .name-container {
         display: flex;

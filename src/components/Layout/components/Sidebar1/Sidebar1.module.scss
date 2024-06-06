@@ -27,6 +27,18 @@
     justify-content: space-between;
     height: calc(100% - 108px);
     font-size: 1.8rem;
+    position: relative;
+
+    & .line {
+        height: 60px;
+        width: 3px;
+        border-radius: 1px;
+        background-color: var(--primary-color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        transition: all 0.2s ease;
+    }
 }
 
 .option {
@@ -37,22 +49,11 @@
     a {
         display: flex;
         align-items: center;
-        transition: linear 0.15s;
+        transition: ease 0.3s;
 
         &:not(&[class*='activeText']):hover {
             transform: translateX(2px);
             animation: OptionHover 0.08s linear forwards;
-        }
-
-        &[class*='activeText']::after {
-            content: '';
-            position: absolute;
-            right: 0;
-            top: -4px;
-            display: block;
-            background-color: var(--primary-color);
-            height: calc(100% + 8px);
-            width: 3px;
         }
     }
 }
