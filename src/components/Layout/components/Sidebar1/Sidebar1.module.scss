@@ -54,6 +54,7 @@
         &:not(&[class*='activeText']):hover {
             transform: translateX(2px);
             animation: OptionHover 0.08s linear forwards;
+            font-size: 2rem;
         }
     }
 }

@@ -111,8 +111,8 @@ function Home() {
                         height: '360px',
                         padding: '0',
                         marginTop: '32px',
-                        width: '100%',
-                        maxWidth: '720px',
+                        width: '720px',
+                        maxWidth: '100%',
                         borderRadius: '16px',
                         backgroundColor: 'transparent',
                         boxShadow: ' #000 2px 2px 4px',
@@ -121,7 +121,7 @@ function Home() {
                     slideItemDis={0}
                     centerItemsSize={0}
                     navigation={['right', 'left']}
-                    navigationDistance={0}
+                    navigationDistance={-10}
                     navigationStyles={{
                         width: '46px',
                         height: '60px',
@@ -129,8 +129,10 @@ function Home() {
                         backgroundColor: 'transparent',
                         boxShadow: 'none',
                     }}
-                    listSpeed={0.8}
-                    // autoScrollTime={1}
+                    listSpeed={1}
+                    autoScrollTime={3}
+                    itemList={movieListDemo}
+                    loop
                 >
                     {movieListDemo.map((Movie, i) => {
                         return (
