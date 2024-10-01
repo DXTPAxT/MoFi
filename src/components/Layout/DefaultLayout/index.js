@@ -1,16 +1,15 @@
 import classNames from 'classnames/bind';
 import styles from './DefaultLayout.module.scss';
 
-import Sidebar1 from '../components/Sidebar1';
-// import Sidebar2 from '../components/Sidebar2';
+import Nav from '../components/Nav';
+// import Sidebar from '../components/Sidebar';
 
 const cx = classNames.bind(styles);
 
 function DefaultLayout({ children }) {
     return (
         <div className={cx('row', 'h100')}>
-            <Sidebar1 />
-            <div className={cx('content', 'col-10', 'h100')}>{children}</div>
+            <div className={cx('content', 'h100')}>{children}</div>
         </div>
     );
 }

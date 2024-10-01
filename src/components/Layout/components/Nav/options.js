@@ -1,5 +1,6 @@
 const options = {
     menu: [
+        { path: '/ghost', icon: 'mingcute:home-2-fill', content: 'Home' },
         { path: '/', icon: 'mingcute:home-2-fill', content: 'Home' },
         { path: '/discover', icon: 'iconamoon:discover-fill', content: 'Discover' },
         { path: '/awards', icon: 'bi:award-fill', content: 'Awards' },

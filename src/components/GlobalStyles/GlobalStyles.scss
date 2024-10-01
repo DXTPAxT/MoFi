@@ -27,6 +27,7 @@
 
 html {
     font-size: 62.5%;
+    background-color: var(--page-bg);
 }
 
 body {
@@ -35,7 +36,7 @@ body {
 }
 
 .App {
-    height: 100vh;
+    height: 1000px;
 }
 
 ul {
@@ -85,4 +86,30 @@ input,
         flex-basis: 100% * math.div($i, 12);
         max-width: 100% * math.div($i, 12);
     }
+}
+
+.Home--container {
+    margin: auto;
+    width: 100%;
+}
+
+// scroll bar
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #0b0b0b;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #343434;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #545454;
 }

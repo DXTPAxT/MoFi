@@ -37,7 +37,7 @@ function Genres() {
                 firstItem={8}
                 centerItemsSize={90}
                 navigation={['right', 'left']}
-                navigationDistance={-20}
+                navigationDistance={-28}
                 navigationStyles={{
                     width: '32px',
                     height: '44px',

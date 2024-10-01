@@ -15,8 +15,8 @@ import Celebrities from '~/pages/Celebrities';
 
 // Public Routes
 const publicRoutes = [
-    { path: '/', component: Home, layout: HomeLayout },
-    { path: '/discover', component: Discover },
+    { path: '/', component: Home},
+    { path: '/discover', component: Discover},
     { path: '/topRated', component: TopRated },
     { path: '/watchList', component: WatchList },
     { path: '/settings', component: Settings },
